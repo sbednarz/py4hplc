@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 import configparser
 import re
 from scipy.signal import savgol_filter
+from scipy.integrate import trapezoid
 import os
 import sys
 
@@ -303,7 +304,7 @@ class Batch:
 
             signal_bg_corrected = ss - (aa*tt+bb)
 
-            area = integrate.trapezoid(signal_bg_corrected, dx=dt)
+            area = trapezoid(signal_bg_corrected, dx=dt)
             peaks['area'][i] = area
             peaks['aa'][i]=aa
             peaks['bb'][i]=bb
