@@ -404,7 +404,7 @@ class Chromatogram:
     # ClarityChrom TXT file parser
     def __read_chromatogram(self, batchdir, filename):
         path = batchdir+'/'+filename
-        with open(path) as f:
+        with open(path, errors='replace') as f:
             content = f.readlines()
         f.close()
 
