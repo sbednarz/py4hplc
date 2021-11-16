@@ -5,7 +5,7 @@ A simple Python 3 library for batch processing of HPLC data with automatic peak 
 <img src="WZ1_40_270.png" width="1500">
 
 
-### Live Jupyter notebooks: [demo](https://mybinder.org/v2/gh/sbednarz/py4hplc/HEAD?labpath=demo.ipynb)
+[Live Jupyter notebook demo](https://mybinder.org/v2/gh/sbednarz/py4hplc/HEAD?labpath=demo.ipynb)
 
 
 
